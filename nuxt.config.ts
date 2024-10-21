@@ -4,7 +4,8 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
     runtimeConfig: {
         public: {
-            appHost: process.env.APP_HOST
+            appHost: process.env.APP_HOST,
+            apiHost: process.env.API_HOST
         }
     },
     app: {

@@ -5,6 +5,6 @@ const route = useRoute()
 
 <template>
     <div>
-        country id: {{ route.params.id }}
+        country id: {{ route.params.code }}
     </div>
 </template>

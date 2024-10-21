@@ -5,4 +5,14 @@
         grid-template-columns: 500px 1fr;
         column-gap: 32px;
     }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+    &__random-country {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
 }

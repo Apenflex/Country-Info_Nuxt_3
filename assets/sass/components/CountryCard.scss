@@ -1,0 +1,11 @@
+.country-card {
+    padding: 10px 30px;
+    background-color: rgb(148, 148, 148);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+    transition: background-color $transitionTime;
+    &:hover {
+        background-color: rgb(138, 138, 138);
+    }
+}

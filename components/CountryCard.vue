@@ -9,9 +9,10 @@ defineProps({
 
 <template>
     <NuxtLink 
-        :to="`/country-${country.id}`"
+        :to="`/country-${country.countryCode}`"
         class="country-card"
     >
-        Country Card {{ country.id }}
+        {{ country.name }}
+        <slot name="next-holiday" />
     </NuxtLink>
 </template>
