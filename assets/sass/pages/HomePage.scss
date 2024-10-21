@@ -1,0 +1,8 @@
+.page-home {
+    &__wrapper {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: 500px 1fr;
+        column-gap: 32px;
+    }
+}

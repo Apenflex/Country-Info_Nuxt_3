@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <!-- <div> -->
+    <!-- <HeaderBlock /> -->
         <slot />
-    <!-- </div> -->
+    <!-- <FooterBlock /> -->
 </template>

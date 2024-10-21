@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+@include font-face('Roboto', 'Roboto-Regular', 400);
+
+html,
+body {
+    font-size: 16px;
+    line-height: 24px;
+}
+body {
+    position: relative;
+    background-color: rgb(216, 216, 216);
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    min-height: 100dvh;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+main {
+    padding-top: 70px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    display: block;
+}
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 100%;
+}
+svg {
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    border: none;
+}
+
+.router-link-exact-active {
+    pointer-events: none;
+}
+
+.container-80 {
+    width: min(100% - 160px, 1920px);
+    margin-inline: auto;
+    @include media($md) {
+        width: min(100% - 80px, 1920px);
+    }
+    @include media($sm) {
+        width: min(100% - 32px, 1920px);
+    }
+}
