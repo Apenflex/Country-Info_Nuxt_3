@@ -48,7 +48,7 @@ export const usePageStore = defineStore('usePageStore', {
                     method: 'GET'
                 })
                     .then((data) => {
-                        console.log(data)
+                        // console.log(data)
                         if (data && data.length > 0) {
                             this.holidays[countryCode] = data[0]; // Зберігаємо тільки наступне свято
                         }
