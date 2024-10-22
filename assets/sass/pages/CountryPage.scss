@@ -1,0 +1,45 @@
+.page-country {
+    &__pagination {
+        display: flex;
+        a {
+            margin: 0 8px;
+            padding: 8px 16px;
+            background-color: $primary;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-shadow: 0 0 8px $dark_20;
+            &.router-link-exact-active {
+                pointer-events: all;
+            }
+            &:hover {
+                background-color: $primary100;
+            }
+            &:disabled {
+                background-color: $primary;
+                cursor: not-allowed;
+            }
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 32px;
+        & > p {
+            grid-column: span 2;
+            text-align: center;
+            margin-top: 40px;
+        }
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        padding: 16px 24px;
+        background-color: $primary;
+        border-radius: 8px;
+        box-shadow: 0 0 8px $dark_20;
+    }
+}

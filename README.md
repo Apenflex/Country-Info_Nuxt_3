@@ -1,11 +1,19 @@
-# Nuxt Minimal Starter
+# Country Holiday
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A project for searching holidays for the current, past, and future years.
+
+## Technologies
+
+- Vue.js
+- Nuxt.js
 
 ## Setup
 
-Make sure to install dependencies:
+Before installing the npm packages, create a `.env` file in the root of your project and add the following values:
+- APP_HOST=http://localhost:3000 
+- API_HOST=https://date.nager.at
 
+Then, install dependencies:
 ```bash
 # npm
 npm install
@@ -18,13 +26,10 @@ yarn install
 
 # bun
 bun install
-```
 
-## Development Server
+Development Server
 
-Start the development server on `http://localhost:3000`:
-
-```bash
+Start the development server on http://localhost:3000:
 # npm
 npm run dev
 
@@ -36,40 +41,9 @@ yarn dev
 
 # bun
 bun run dev
-```
 
-## Production
+Author
+Sviatoslav Ivanyshyn
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+License
+Open Source

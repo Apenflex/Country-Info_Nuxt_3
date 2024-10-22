@@ -56,6 +56,24 @@ export const usePageStore = defineStore('usePageStore', {
                     })
                     .catch(err => reject(err))
             })
+        },
+        ACT_GET_HOLIDAY_BY_YEAR(year, countryCode) { 
+            return new Promise((resolve, reject) => { 
+                useApi(`/api/v3/PublicHolidays/${year}/${countryCode}`, {
+                    method: 'GET'
+                })
+                    .then((data) => resolve(data))
+                    .catch(err => reject(err))
+            })
+        },
+        ACT_GET_COUNTRY_INFO(countryCode) { 
+            return new Promise((resolve, reject) => { 
+                useApi(`/api/v3/CountryInfo/${countryCode}`, {
+                    method: 'GET'
+                })
+                    .then((data) => resolve(data))
+                    .catch(err => reject(err))
+            })
         }
     }
 })

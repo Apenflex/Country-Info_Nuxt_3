@@ -12,7 +12,9 @@ defineProps({
         :to="`/country-${country.countryCode}`"
         class="country-card"
     >
-        {{ country.name }}
+        <div class="text-20 font-600">
+            {{ country.name }}
+        </div>
         <slot name="next-holiday" />
     </NuxtLink>
 </template>

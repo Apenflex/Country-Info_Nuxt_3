@@ -37,9 +37,15 @@ onMounted(() => {
                             :country="country"
                         >
                             <template #next-holiday>
-                                <div v-if="pageStore.GET_NEXT_HOLIDAY(country.countryCode)">
-                                    <p>Next holiday: {{ pageStore.GET_NEXT_HOLIDAY(country.countryCode).name }}</p>
-                                    <p>Date: {{ pageStore.GET_NEXT_HOLIDAY(country.countryCode).date }}</p>
+                                <div v-if="pageStore.GET_NEXT_HOLIDAY(country.countryCode)" class="mt-16">
+                                    <p>Next holiday: 
+                                        <span class="text-20 font-600">
+                                            {{ pageStore.GET_NEXT_HOLIDAY(country.countryCode).name }}
+                                        </span>
+                                    </p>
+                                    <p class="text-18">
+                                        Date: {{ formattedDate(pageStore.GET_NEXT_HOLIDAY(country.countryCode).date) }}
+                                    </p>
                                 </div>
                                 <div v-else>
                                     <p>Loading next holiday...</p>
